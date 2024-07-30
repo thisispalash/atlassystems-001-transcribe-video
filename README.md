@@ -27,7 +27,7 @@ $ python3 app.py
 > Available flags
 
 - `-p` This flag uses the public minio server. Default is `False`.
-- `-d` This flag makes the script download the uploaded file to verify checksums. Default is `False`.
+- `-d` This flag makes the script download the uploaded file to verify checksums. Default is `False`. (**not implemented yet**)
 - `-w` This flag sets the number of workers for parallel chunk uploads. Default is `8`.
 >> using workers reduced upload of 862MB file from ~425s to ~388s.
 
