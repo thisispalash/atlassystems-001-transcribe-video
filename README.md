@@ -24,6 +24,16 @@ $ pip3 install -r requirements.txt
 $ python3 app.py
 ```
 
-> Available options
+> Available flags
 
-TODO
+- `-p` This flag uses the public minio server. Default is `False`.
+- `-d` This flag makes the script download the uploaded file to verify checksums. Default is `False`.
+- `-w` This flag sets the number of workers for parallel chunk uploads. Default is `8`.
+>> using workers reduced upload of 862MB file from ~425s to ~388s.
+
+> Selecting which sized file to upload
+>> By default all three sizes (sm, md, lg) are uploaded sequentially
+
+- `-s` This flag only uploads the small file.
+- `-m` This flag only uploads the medium file.
+- `-l` This flag only uploads the large file.
